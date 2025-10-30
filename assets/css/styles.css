@@ -256,6 +256,26 @@ a {
     margin-bottom: 1rem;
 }
 
+.stats-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stats-wrapper .stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--purple-500);
+    margin-bottom: 0;
+}
+
+.stats-wrapper .stat-label {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    margin-bottom: 0;
+}
+
 .about_stats {
     display: flex;
     gap: 2rem;
@@ -269,17 +289,6 @@ a {
 
 .stat-item {
     text-align: center;
-}
-
-.stat-item p:first-child {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--purple-500);
-}
-
-.stat-item p:last-child {
-    font-size: 0.875rem;
-    color: var(--gray-400);
 }
 
 /* === CONTACT === */
