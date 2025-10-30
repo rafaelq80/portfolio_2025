@@ -3,6 +3,13 @@
 
 <head>
 
+    <!-- Servidores de Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Google - Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio do Rafael, desenvolvedor web fullstack.">
@@ -10,6 +17,9 @@
     <meta name="keywords" content="portfólio, desenvolvedor, web, fullstack, Rafael Queiróz, HTML, CSS, JavaScript">
     
     <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <title>Portfólio do Rafael</title>
     
@@ -97,12 +107,7 @@
                 </div>
             </div>
 
-            <form action="https://formsubmit.co/7065d88cfa92a310a1da3b7a5effb0c9" method="POST" id="formulario">
-                
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_subject" value="Nova mensagem do Portfólio!">
+            <form id="formulario">
 
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Seu nome completo">
