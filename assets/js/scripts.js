@@ -39,14 +39,16 @@ async function getApiGithub() {
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus veniam ab ad at quod? Dolorem recusandae voluptates tenetur laboriosam cupiditate, libero ab ipsum, soluta veritatis beatae odit nostrum vel! Explicabo.</p>
                 <div class="about_stats">
                     <a href="${perfil.html_url}" target="_blank" class="botao">Ver GitHub</a>
-                    <div class="stat-item">
-                        <p>${perfil.followers} +</p>
-                        <p>Seguidores</p>
-                    </div>
-                    <div class="stat-item">
-                        <p>${perfil.public_repos} +</p>
-                        <p>Repositórios</p>
-                    </div>
+					<div class="stats-wrapper">
+						<div class="stat-item">
+							<p class="stat-number">${perfil.followers}</p>
+							<p class="stat-label">Seguidores</p>
+						</div>
+						<div class="stat-item">
+							<p class="stat-number">${perfil.public_repos}</p>
+							<p class="stat-label">Repositórios</p>
+						</div>
+					</div>
                 </div>
             </div>
     `

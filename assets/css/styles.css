@@ -256,6 +256,26 @@ a {
     margin-bottom: 1rem;
 }
 
+.stats-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stats-wrapper .stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--purple-500);
+    margin-bottom: 0;
+}
+
+.stats-wrapper .stat-label {
+    font-size: 0.875rem;
+    color: var(--gray-400);
+    margin-bottom: 0;
+}
+
 .about_stats {
     display: flex;
     gap: 2rem;
@@ -269,17 +289,6 @@ a {
 
 .stat-item {
     text-align: center;
-}
-
-.stat-item p:first-child {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--purple-500);
-}
-
-.stat-item p:last-child {
-    font-size: 0.875rem;
-    color: var(--gray-400);
 }
 
 /* === CONTACT === */
@@ -456,4 +465,256 @@ footer {
     color: var(--white);
     background: linear-gradient(to right top, var(--purple-500), var(--purple-800));
     margin-top: auto;
+}
+
+/* === RESPONSIVIDADE === */
+
+/* Tablets e dispositivos médios (até 1120px) */
+@media screen and (max-width: 70rem) {
+    .menu_content,
+    .hero_container,
+    .about_container,
+    .contact_container {
+        max-width: 100%;
+        padding: 3rem 2rem;
+    }
+
+    .menu_content {
+        padding: 0 2rem;
+    }
+}
+
+/* Tablets menores (até 960px) */
+@media screen and (max-width: 60rem) {
+    /* Hero Section */
+    .hero_container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .hero_content h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .hero_buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* About Section */
+    .about_container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .about_image {
+        flex: 0 0 auto;
+    }
+
+    .about_image img {
+        max-width: 15rem;
+        margin: 0 auto;
+    }
+
+    /* About Stats - Botão em cima (100% largura), stats lado a lado embaixo */
+    .about_stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .about_stats .botao {
+        width: 100%;
+        max-width: 20rem;
+        margin: 0 auto;
+    }
+
+    /* Wrapper para manter os stats lado a lado */
+    .stats-wrapper {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .stat-item {
+        flex: 0 0 auto;
+    }
+
+    /* Contact Section */
+    .contact_container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .contact_info {
+        text-align: center;
+    }
+
+    .social_container {
+        justify-content: center;
+    }
+}
+
+/* Smartphones (até 490px) */
+@media screen and (max-width: 30.625rem) {
+    /* Menu */
+    .menu_content {
+        justify-content: center;
+        padding: 0 1rem;
+    }
+
+    .menu_list {
+        display: none;
+    }
+
+    #titulo a {
+        font-size: 1.25rem;
+    }
+
+    /* Hero Section */
+    .hero_container {
+        padding: 1.5rem 1rem;
+        min-height: auto;
+    }
+
+    .hero_content h4 {
+        font-size: 1rem;
+    }
+
+    .hero_content h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .hero_content p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .hero_buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.75rem;
+    }
+
+    .hero_buttons .botao,
+    .hero_buttons .botao-outline {
+        width: 100%;
+    }
+
+    /* About Section */
+    .about_container {
+        padding: 1.5rem 1rem;
+        margin: 2rem auto;
+    }
+
+    .about_image img {
+        max-width: 12rem;
+    }
+
+    .about_content h2 {
+        font-size: 1.75rem;
+    }
+
+    .about_content p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .about_stats {
+        gap: 1rem;
+    }
+
+    .about_stats .botao {
+        font-size: 0.9rem;
+        padding: 0.625rem 1.25rem;
+    }
+
+    .about_content .stat-item .stat-number {
+        font-size: 1.25rem;
+    }
+
+    .about_content .stat-item .stat-label {
+        font-size: 0.8rem;
+    }
+
+    /* Contact Section */
+    .contact_container {
+        padding: 1.5rem 1rem;
+        margin: 2rem auto;
+        gap: 2rem;
+    }
+
+    .contact_info h4 {
+        font-size: 1.75rem;
+    }
+
+    .contact_info p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .social_container {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+
+    .social_icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        padding: 0.625rem;
+    }
+
+    /* Formulário */
+    form input,
+    form textarea {
+        padding: 0.75rem;
+        font-size: 0.95rem;
+    }
+
+    form label {
+        font-size: 0.95rem;
+    }
+
+    .botao,
+    .botao-outline {
+        padding: 0.625rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    /* Página de Sucesso */
+    .sucess_container {
+        padding: 2rem 1rem;
+    }
+
+    .sucess_icon {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .sucess_icon svg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .sucess_content h1 {
+        font-size: 1.75rem;
+    }
+
+    .sucess_content h4 {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }
