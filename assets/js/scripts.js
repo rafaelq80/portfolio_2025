@@ -30,10 +30,10 @@ async function getApiGithub() {
 		// PASSO 3: Cria o HTML com os dados do perfil do GitHub
 		// Usamos template strings (`) para inserir variáveis com ${}
 		let conteudo = `
-            <div class="about_image">
+            <figure class="about_image">
                  <img src="${perfil.avatar_url}" alt="Foto do perfil do Github - ${perfil.name}" />
-            </div>
-            <div class="about_content">
+            </figure>
+            <article class="about_content">
                 <h2>Sobre mim</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, consectetur sint corporis voluptate nam laboriosam nostrum nihil, dicta voluptas minus consequatur? Nesciunt soluta similique voluptate repellat perferendis sit quod accusantium.</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus veniam ab ad at quod? Dolorem recusandae voluptates tenetur laboriosam cupiditate, libero ab ipsum, soluta veritatis beatae odit nostrum vel! Explicabo.</p>
@@ -50,7 +50,7 @@ async function getApiGithub() {
 						</div>
 					</div>
                 </div>
-            </div>
+            </article>
     `
 		// PASSO 4: Adiciona o HTML criado dentro da seção "sobre"
 		// innerHTML += adiciona o conteúdo sem apagar o que já existe
