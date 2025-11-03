@@ -256,11 +256,25 @@ a {
     margin-bottom: 1rem;
 }
 
+.about_stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.about_stats .botao {
+    margin-right: auto;
+}
+
+.stat-item {
+    text-align: center;
+}
+
 .stats-wrapper {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin-top: 2rem;
 }
 
 .stats-wrapper .stat-number {
@@ -276,20 +290,6 @@ a {
     margin-bottom: 0;
 }
 
-.about_stats {
-    display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
-    align-items: center;
-}
-
-.about_stats .botao {
-    margin-right: auto;
-}
-
-.stat-item {
-    text-align: center;
-}
 
 /* === CONTACT === */
 .contact_container {
